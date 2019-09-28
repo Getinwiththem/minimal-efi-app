@@ -40,7 +40,7 @@ typedef struct EfiSystemTable {
 } EfiSystemTable;
 
 int efi_main(void *imageHandle, EfiSystemTable* systemTable) {
-    systemTable->conOut->output_string(systemTable->conOut, (int16_t *)L"Hello, World!");
+    systemTable->conOut->output_string(systemTable->conOut, (int16_t *)L"This is Mega Dope!");
     for(;;) __asm__("hlt");
     return 0;
 }
